@@ -1,0 +1,623 @@
+@media screen and (max-width:2561px) and (min-width:2000px){
+  #partnerProgram>div>div {
+    width: 33%;
+    text-align: center;
+  }
+  #franshiza p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #franshiza>div{text-align: center;}
+  #partnerProgram li{
+    text-align: left;
+  }
+}
+@media screen and (max-width:1999px) and (min-width:1800px){
+
+}
+@media screen and (max-width:1441px){
+  .rightInfo img{
+    width: 650px;
+  }
+  #franshiza img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 36px;
+  }
+  .leftInfo form, #formPartnerProgram {
+    position: relative;
+    margin-top: 0px;
+    height: 624px;
+    width: 420px;
+    left: 0;
+    text-align: center;
+    padding: 70px 50px;
+    background: white;
+    -webkit-box-shadow: 0 0 28px -11px black;
+    box-shadow: 0 0 28px -11px black;
+  }
+  #results .directional_nav{
+    visibility: hidden;
+  }
+  #results .slide_viewer{
+    height: 400px;
+  }
+  .contactHeader button {
+    margin-left: 3px;
+    height: 54px;
+    border-radius: 27px;
+    width: 50%;
+    border: 1px solid #303030;
+    font-size: 14px;
+    background: transparent;
+    cursor: pointer;
+    transition: .3s all;
+  }
+  #header{
+    padding: 40px 50px;
+  }
+  .contactHeader{
+    margin-left: -20px;
+  }
+  #headerInfo {
+    padding: 40px 10.15% 0 10.15%;
+    background: #f7f7f7;
+    height: 760px;
+  }
+  .rightBusines h2, #conseption h2{
+    font-size:30px;
+  }
+  #franshiza p {
+    width: 90%;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  #partnerProgram .elips6 {
+    position: absolute;
+    top: 0;
+    opacity: .2;
+  }
+  #partnerProgram>div>div>img{
+    width: 100%;
+    height: auto;
+  }
+  #text-size{
+    width: auto;
+    margin-left: 0;
+  }
+#partnerProgram>div>div:nth-child(3){
+  padding-left: 0;
+}
+
+  #partnerProgram .elips10 {
+    position: absolute;
+    bottom: 24%;
+    left: 0;
+    opacity: .2;
+  }
+  #partnerProgram>div>div{
+    margin-left: 20px;
+    margin: 0;
+  }
+  .laptop {
+    width: 500px!important;
+    position: absolute;
+    top: 118px;
+    height: auto!important;
+    right: -88px;
+  }
+
+}
+@media screen and (max-width:1400px) and (min-width:1300px){
+  #text-size {
+    width: 600px;
+    margin-left: -114px;
+    margin-top: 50px;
+    line-height: 24px;
+  }
+  #partnerProgram>div>div>img{
+    height: auto;
+  }
+  #partnerProgram li>p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  #partnerProgram li {
+    color: #abece0;
+    list-style-type: circle;
+    line-height: 20px;
+  }
+  #partnerProgram>div>div{
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width:1025px){
+  #franshiza>div{
+    flex-direction: column;
+  }
+  .width-fixed>div{
+    width: 100%;
+  }
+  #partnerProgram>div{
+    flex-direction: column;
+  }
+  .rightInfo img {
+    width: 100%;
+  }
+  #headerInfo{
+    flex-direction: column-reverse;
+  }
+  #header{
+    padding: 40px 20px;
+  }
+  .logo{
+    z-index:999;
+  }
+  .logo img{
+    width: 300px!important;
+    z-index: 999;
+  }
+  #header nav{
+    margin-left: 0;
+  }
+  #header a{
+    font-size:9px;
+  }
+  .contactHeader{
+    margin-top: -20px;
+  }
+  #headerInfo{
+    padding: 40px 20px;
+    height: 100%;
+  }
+  .leftInfo form, #formPartnerProgram {
+    position: absolute;
+    margin-top: 0px;
+    top: 212px;
+    height: 624px;
+    width: 420px;
+    text-align: center;
+    padding: 70px 50px;
+    background: white;
+    -webkit-box-shadow: 0 0 28px -11px black;
+    box-shadow: 0 0 28px -11px black;
+    left: 55%;
+  }
+  #franshiza>div.d-flex>div{
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  #partnerProgram>div.d-flex>div{
+    margin-bottom: 30px;
+  }
+  #text-size{
+    margin: 20px auto;
+  }
+  .rightBusines{
+    width: 100%;
+    z-index: 10;
+  }
+  .laptop{
+    width: 100%!important;
+  }
+  #conseption>div{
+    z-index: 99;
+  }
+  .elips41{
+    display: none;
+  }
+  .leftAboutUs{
+    padding-right: 20px;
+  }
+  #franshiza img{
+    width: 100%;
+  }
+  #request>div{
+    flex-direction: column;
+    text-align: center;
+  }
+  #formPartnerProgram{
+    position: relative;
+    top:400px;
+  }
+  #partnerProgram>div>div{
+    width: 100%;
+  }
+  #partnerProgram>div>div:nth-child(3){
+    display: none;
+  }
+  #results .next_btn {
+    left: -100px;
+    top: -83px;
+    right: 0;
+  }
+  #results .slide_viewer {
+    height: 415px;
+  }
+  #footer>div>button{
+    z-index: 99;
+  }
+  .elips8{
+    display: none;
+  }
+}
+@media screen and (max-width:769px){
+  #partnerProgram>div>div:nth-child(3){
+    display: none;
+  }
+  #header>img{
+    display: none;
+  }
+  #header ul{
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  #conseption>div{
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .leftConseption{
+    width: 100%;
+  }
+  .rightConseption{
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+  #aboutUs>div{
+    flex-direction: column;
+  }
+  .leftAboutUs, .rightAboutUs{
+    width: 100%;
+  }
+  #results>div{
+    flex-direction: column;
+  }
+  .leftResult, .rightResult{
+    width: 100%;
+  }
+  .rightResult{
+    padding-top:0;
+    padding-bottom: 20px;
+  }
+  #footer img.elips8, #footer img.elips81{
+    display: none;
+  }
+  .leftInfo form{
+    position: relative;
+    top:0;
+    left: 0;
+  }
+  .leftInfo>div>h2 {
+    position: absolute;
+    width: 850px;
+    font-weight: 900;
+    letter-spacing: 0.015em;
+    line-height: 63px;
+    font-size: 33px;
+  }
+  .mobile-hide{
+    display: none;
+  }
+  .leftInfo>div>h2{
+    width: 730px;
+  }
+  .emptyBusines{
+    display: none;
+  }
+  #partnerProgram h2{
+    font-size:26px;
+  }
+  #header nav {
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contactHeader{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  #footer>div>div{
+    text-align: left;
+  }
+}
+@media screen and (max-width:426px){
+  #busines>img{
+    display: none;
+  }
+  #partnerProgram p>span{
+    display: none;
+  }
+  #header ul{
+    margin: 0;
+  }
+  .rightBusines h2, #conseption h2{
+    font-size:16px;
+    margin-left: -50px;
+  }
+  #franshiza h2 {
+    font-size: 22px;
+    letter-spacing: 0.015em;
+    line-height: 51px;
+    font-weight: 900;
+    background: url(../img/Ellipse 2.png) no-repeat;
+    background-position: 28px;
+    margin-left: -26px;
+    padding: 0 50px;
+    background-size: contain;
+    margin-bottom: 70px;
+    height: 100px;
+    padding: 23px 0 23px 70px;
+  }
+  #request h2, #partnerProgram h2, #aboutUs h2, #results h2 {
+    font-size: 16px;
+    letter-spacing: 0.015em;
+    line-height: 51px;
+    font-weight: 900;
+    background: url(../img/Ellipse 2.png) no-repeat;
+    background-position: 28px;
+    margin-left: -26px;
+    background-size: contain;
+    margin-bottom: 70px;
+    height: 100px;
+    padding: 0 0 23px 70px;
+  }
+  .persentRequest button, .btnConseption button, #footer button {
+    font-size: 14px!important;
+    letter-spacing: 0.05em;
+    margin-top: 19px;
+    width: 100%;
+    height: 57px;
+    background: #ff6b7d;
+    border: 0;
+    border-radius: 28.5px;
+    color: white;
+    cursor: pointer;
+    transition: .3s all;
+  }
+  .rightResult{
+    padding: 20px 0;
+  }
+  #header nav {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contactHeader{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  #header>img{
+    display: none;
+  }
+  #header{
+    flex-direction: column;
+  }
+  #header ul{
+    flex-direction: column;
+  }
+  .leftInfo>p {
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    line-height: 24px;
+  }
+  .leftInfo>div{
+    height: 350px;
+  }
+  .leftInfo>div>h2 {
+    position: absolute;
+    width: 100%;
+    font-weight: 900;
+    letter-spacing: 0.015em;
+    line-height: 63px;
+    font-size: 29px;
+  }
+  .leftInfo form, #formPartnerProgram {
+    position: absolute;
+    margin-top: 0px;
+    top: 241px;
+    height: 624px;
+    width: 380px;
+    text-align: center;
+    padding: 70px 20px;
+    background: white;
+    -webkit-box-shadow: 0 0 28px -11px black;
+    box-shadow: 0 0 28px -11px black;
+    left: 55%;
+  }
+  #partnerProgram .elips10{
+    display: none;
+  }
+  .previous_btn {
+    left: -100px;
+  }
+  #result .previous_btn {
+    left: 4px;
+  }
+  .leftInfo form, #formPartnerProgram{
+    display: none!important;
+  }
+  #partnerProgram .elips6{
+    display: none;
+  }
+  #results .directional_nav{
+    display: none;
+  }
+  #footer>div{
+    padding: 0 30px;
+  }
+  #footer>div>button {
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 0.05em;
+    width: 347px!important;
+    cursor: pointer;
+  }
+  #footer img.elips8, #footer img.elips81{
+    display: none;
+  }
+  #request h2{
+    padding: 20px 0 0 70px;
+  }
+  #request{
+    padding: 100px 0 0 0;
+    margin-left: 20px;
+  }
+  #partnerProgram h2{
+    height: 60px;
+    font-size:13px;
+    padding: 7px 0 0 71px;
+  }
+  #aboutUs h2{
+    padding: 24px 0 23px 70px;
+  }
+  #results h2{
+    padding: 24px 0 23px 70px;
+  }
+}
+@media screen and (max-width:376px){
+  .leftInfo>div>h2 {
+    position: absolute;
+    width: 100%;
+    font-weight: 900;
+    letter-spacing: 0.015em;
+    line-height: 63px;
+    font-size: 25px;
+  }
+  .persentRequest button, .btnConseption button, #footer button{
+    width: 100%;
+  }
+  #footer>div>button {
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 0.05em;
+    width: 313px!important;
+    cursor: pointer;
+  }
+  #request h2, #partnerProgram h2, #aboutUs h2, #results h2 {
+      font-size: 15px;
+      letter-spacing: 0.015em;
+      line-height: 51px;
+      font-weight: 900;
+      background: url(../img/Ellipse 2.png) no-repeat;
+      background-position: 28px;
+      margin-left: -26px;
+      padding: 0 50px;
+      background-size: contain;
+      margin-bottom: 70px;
+  }
+  .rightBusines h2{
+    padding-top:0;
+  }
+  .persentRequest p>span {
+    font-size: 20px!important;
+  }
+  #partnerProgram h2{
+    font-size:12px;
+  }
+  #franshiza h2{
+    font-size:15px;
+  }
+  .rightBusines h2{
+    font-size:17px;
+  }
+  .rightBusines h2{
+    font-size: 16px;
+    padding-top: 24px;
+  }
+  #request h2{
+    padding:24px 0 0 70px;
+  }
+  #partnerProgram h2{
+    height: 100px;
+    line-height: 20px;
+    padding: 36px 0 0 70px!important;
+  }
+  #aboutUs h2{
+    padding: 24px 0 0 70px;
+  }
+  .AboutCount1>div>div, .AboutCount2>div>div, .AboutCount3>div>div{
+    text-align: center;
+  }
+  #request h2{
+    padding: 21px 50px!important;
+  }
+}
+@media screen and (max-width:321px){
+  .leftInfo>div>h2 {
+      position: absolute;
+      width: 100%;
+      font-weight: 900;
+      letter-spacing: 0.015em;
+      line-height: 63px;
+      font-size: 22px;
+  }
+  .rightBusines h2{
+    font-size: 18px!important;
+  }
+  .rightBusines h2, #conseption h2 {
+    font-size: 23px;
+    letter-spacing: 0.015em;
+    line-height: 51px;
+    font-weight: 900;
+    background: url(../img/Ellipse 2.png) no-repeat;
+    background-position: 28px;
+    margin-left: -54px;
+    padding: 0 50px;
+    background-size: contain;
+    margin-bottom: 70px;
+  }
+  #franshiza h2 {
+    font-size: 16px;
+    letter-spacing: 0.015em;
+    line-height: 51px;
+    font-weight: 900;
+    background: url(../img/Ellipse 2.png) no-repeat;
+    background-position: 28px;
+    margin-left: -26px;
+    padding: 0 50px;
+    background-size: contain;
+    margin-bottom: 70px;
+  }
+  #aboutUs .slider{
+    display: none;
+  }
+  #footer>div>button {
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 0.05em;
+    width: 268px!important;
+    cursor: pointer;
+  }
+  #request h2{
+    padding: 0 50px;
+  }
+  #partnerProgram h2{
+    font-size:15px;
+    padding: 0 50px;
+  }
+  .rightResult>div{
+    flex-direction: column;
+  }
+  .rightResult>div.d-flex>div {
+    height: 140px;
+    width: 100%;
+    padding-top: 5%;
+  }
+  #aboutUs{
+    padding: 5px;
+  }
+  #results h2{
+    padding: 0 50px;
+  }
+}

@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Юниум</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/2.2.1/pretty.min.css" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDP3wm-tWn-AlMsJoigRRnycI4OVvP6Q4U&language=uk"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+  <!-- <script src="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.indigo-pink.min.css"> -->
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+      <script type="text/javascript">
+          // When the window has finished loading create our google map below
+          google.maps.event.addDomListener(window, 'load', init);
+
+          function init() {
+              // Basic options for a simple Google Map
+              // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+              var mapOptions = {
+                  // How zoomed in you want the map to start at (always required)
+                  zoom: 4,
+
+                  // The latitude and longitude to center the map (always required)
+                  center: new google.maps.LatLng(55.7999733, 78.42232), // New York
+
+                  // How you would like to style the map.
+                  // This is where you would paste any style found on Snazzy Maps.
+                  styles: [
+    {
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#444444"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#f2f2f2"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 45
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#46bcec"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    }
+]
+              };
+
+              // Get the HTML DOM element that will contain your map
+              // We are using a div with id="map" seen below in the <body>
+              var mapElement = document.getElementById('map');
+
+              // Create the Google Map using our element and options defined above
+              var map = new google.maps.Map(mapElement, mapOptions);
+
+              // Let's also add a marker while we're at it
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(60.09444, 30.26417,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(55.953676, 37.619899,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(55.998551, 49.106324,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(54.934773, 55.957829,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(51.9727, 55.0988,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(46.959179, 142.738041,40),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(48.48272, 135.08379,70),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(43.80291, 131.94578,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(42.116418, 132.882475, 20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(56.010569, 92.852545,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(55.030199, 82.920430,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(54.989342, 73.368212,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(60.939742, 76.569601,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(57.153033, 65.534328,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(55.160283, 61.400856,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(56.838607, 60.605514,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(58.010259, 56.234195,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(54.734773, 55.957829,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(55.798551, 49.106324,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(56.326887, 44.005986,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(57.000348, 40.973921,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(56.859611, 35.911896,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(60.09802, 29.96378,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(68.969563, 33.074540,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(56.129042, 40.407030,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(51.661535, 39.200287,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(53.195522, 50.101819,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(48.707103, 44.516939,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(47.222531, 39.718705,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(45.044502, 41.969065,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(42.983060, 47.504682,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+              var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(45.040216, 38.975996,20),
+                    map: map,
+                    icon: 'img/placeholder.png'
+                });
+          }
+      </script>
+</head>
+<body>
+  <div class="maskTopForm">
+    <div class="topForm wow bounceInLeft">
+      <a href="" onclick="document.getElementsByClassName('maskTopForm')[0].style.display = 'none';" style="float:right;margin-top:-50px;"><img src="img/close1.png" alt=""></a>
+      <form id="topForm" action="">
+        <h3>Заполните форму, и мы свяжемся <br>с Вами в течение рабочего дня</h3>
+        <input type="text" placeholder="Имя" name="topFormName">
+        <input type="tel" placeholder="Телефон" name="topFormTel"><br>
+        <button>Отправить</button>
+      </form>
+    </div>
+  </div>
+  <div class="maskTY">
+    <div class="TY">
+      <a href="" onclick="document.getElementsByClassName('maskTY')[0].style.display = 'none';" style="float:right;margin-top:-50px;"><img src="img/close1.png" alt=""></a>
+      <h3>Спасибо!</h3>
+      <p>Ваша заявка принята и будет обработана в течение рабочего дня!</p>
+      <button onclick="document.getElementsByClassName('maskTY')[0].style.display = 'none';">Вернуться на сайт</button>
+    </div>
+  </div>
+  <div class="maskBigQuestion">
+    <div class="bigQuestion">
+      <a href="" onclick="document.getElementsByClassName('maskBigQuestion')[0].style.display = 'none';" style="float:right;margin-top:-20px;"><img src="img/close1.png" alt=""></a>
+      <form id="formBigQuestion" action="">
+        <h3>Заполните форму и получите ответ <br>директора на указанную почту</h3>
+        <div class="d-flex flex-column">
+          <div class="d-flex">
+            <input type="text" placeholder="Имя" name="bigQuestionName">
+            <input type="tel" placeholder="Телефон" name="bigQuestionTel">
+          </div>
+          <div class="d-flex">
+            <input type="text" placeholder="Город" name="bigQuestionCity">
+            <input type="email" placeholder="Эл.адрес" name="bigQuestionEmail">
+          </div>
+          <textarea name="bigQuestionTextarea" placeholder="Вопрос"></textarea>
+          <button>Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="maskFranshiza">
+    <div class="Franshiza">
+      <a href="" onclick="document.getElementsByClassName('maskFranshiza')[0].style.display = 'none';" style="float:right;margin-top:-20px;"><img src="img/close1.png" alt=""></a>
+      <form id="franshiizaForm" action="">
+        <h3>Заполните форму и получите ответ<br> директора на указанную почту</h3>
+        <div class="d-flex flex-column">
+          <div class="d-flex">
+            <input type="text" placeholder="Имя">
+            <input type="tel" placeholder="Телефон">
+          </div>
+          <div class="d-flex">
+            <input type="text" placeholder="Город">
+            <input type="email" placeholder="Эл.адрес">
+          </div>
+          <button>Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="maskAnketFranshiza">
+    <div class="AnketFranshiza">
+      <a href="" onclick="document.getElementsByClassName('maskAnketFranshiza')[0].style.display = 'none';" style="float:right;margin-top:-20px;"><img src="img/close1.png" alt=""></a>
+      <form action="">
+        <h3>Укажите данные и получите ответ<br> нашего HR в течение рабочего дня!</h3>
+        <div class="d-flex">
+          <div class="leftFran d-flex flex-column">
+            <input type="text" placeholder="Имя" name="nameAnketFranshiza">
+            <input type="text" placeholder="Город" name="cityAnketFranshiza">
+            <input type="tel" placeholder="Телефон" name="telAnketFranshiza">
+            <input type="email" placeholder="E-mail" name="emailAnketFranshiza">
+            <p class="black-text">Допустимый объем вложений, р.</p>
+            <input type="range" />
+            <div class="d-flex justify-content-between" style="width:80%; margin-top:-20px;">
+              <div class="leftText">1 млн</div>
+              <div class="rightText">3 млн</div>
+            </div>
+          </div>
+          <div class="rightFran d-flex flex-column">
+            <p style="font-weight:700;">Выберите актуальные пункты:</p>
+
+            <label class="label--checkbox">
+                <input type="checkbox" class="checkbox" checked>
+                  Есть опыт в сфере образования
+            </label>
+            <label class="label--checkbox">
+                <input type="checkbox" class="checkbox">
+                  Есть опыт ведения бизнеса
+            </label>
+            <label class="label--checkbox">
+                <input type="checkbox" class="checkbox">
+                  Есть опыт управления/администрирования
+            </label>
+            <p class="black-text mt-5">Желаемое время запуска</p>
+            <div class="d-flex">
+              <div class="mdl-select mdl-js-select mdl-select--floating-label">
+                <select class="mdl-select__input" id="professsion" name="professsion">
+                  <option value=""></option>
+                  <option value="option1">option 1</option>
+                  <option value="option2">option 2</option>
+                  <option value="option3">option 3</option>
+                  <option value="option4">option 4</option>
+                  <option value="option5">option 5</option>
+                </select>
+                <label class="mdl-select__label" for="professsion">Месяц</label>
+              </div>
+              <div class="mdl-select mdl-js-select mdl-select--floating-label selctYear">
+                <select class="mdl-select__input" id="professsion" name="professsion">
+                  <option value=""></option>
+                  <option value="option1">option 1</option>
+                  <option value="option2">option 2</option>
+                  <option value="option3">option 3</option>
+                  <option value="option4">option 4</option>
+                  <option value="option5">option 5</option>
+                </select>
+                <label class="mdl-select__label" for="professsion">Год</label>
+              </div>
+            </div>
+            <button>Отправить</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <header id="header" class="d-flex justify-content-between align-items-center">
+    <img src="img/side1.png" alt="">
+    <a href="" class="wow bounceInLeft"><i class="logo"><img height="84" width="90%" src="img/logo.png" alt=""></i></a>
+    <nav>
+      <ul class="wow bounceInUp d-flex justify-content-between">
+        <a href=""><li>Возможности</li></a>
+        <a href=""><li>Анкета</li></a>
+        <a href=""><li>Требования</li></a>
+        <a href=""><li>Карта покрытия</li></a>
+      </ul>
+    </nav>
+    <div class="contactHeader wow bounceInRight">
+      <a href="">+7 (926) 19-92-409</a>
+      <button onclick="document.getElementsByClassName('maskTopForm')[0].style.display = 'block';">Заказать звонок</button>
+    </div>
+  </header>
+  <section id="headerInfo" class="d-flex">
+    <div class="leftInfo">
+      <div><h2 class="wow bounceInUp">Откройте образовательный центр <br> по франшизе уже в этом учебном году!</h2></div>
+      <p>Полная окупаемость за 6 месяцев и оборот от 4 млн руб. При партнерстве с брендом федеральной сети</p>
+      <form action="" id="formInfo" class="d-flex flex-column wow bounceIn">
+        <p>Забронируйте франшизу для запуска в этом учебном году</p>
+        <input type="text" placeholder="Имя">
+        <input type="text" placeholder="Город">
+        <input type="tel" placeholder="Телефон">
+        <input type="email" placeholder="E-mail">
+        <button id="formInfoBtn" onclick="document.getElementsByClassName('maskTY')[0].style.display='block'; return false;">Забронировать франшизу</button>
+      </form>
+    </div>
+    <div class="rightInfo wow bounceInDown">
+      <img src="img/imgHead.png" alt="">
+    </div>
+  </section>
+  <section id="busines" class="d-flex">
+    <img src="img/Ellipse 4.png" alt="" class="wow bounceInLeft">
+    <div class="emptyBusines"></div>
+    <div class="rightBusines wow bounceInRight">
+      <h2>Бизнес с "Юниум" — это выгодно</h2>
+      <ul>
+        <li><p>У вас нет <span>четкой стратегии</span> и <span>опыта</span> ведения бизнеса?</p></li>
+        <li><p>Есть свой <span>учебный центр</span>, но он не приносит прибыли?</p></li>
+        <li><p>Наши франчайзи работают по готовому проверенному бизнес-плану,<br> который за <span>25 лет</span> удалось довести до идеала.</p></li>
+        <li><p>У вас есть возможность продвигаться под <span>известным брендом</span> крупнейшей<br> на рынке образовательных услуг компании.</p></li>
+        <li><p>Нужно быстро получить первую <span>прибыль</span>?</p></li>
+        <li><p>Сложно выбрать <span>перспективную</span> нишу?</p></li>
+        <li><p>Результат, выраженный в <span>деньгах</span>, вы получите через <span>несколько месяцев</span>,<br> а не спустя пару лет после открытия.</p></li>
+        <li><p>Аналогов <span>"Юниум"</span> не существует, будучи нашим партнером, вы продвигаетесь<br> в не занятой в РФ нише.</p></li>
+      </ul>
+    </div>
+  </section>
+  <section id="franshiza">
+    <h2 class="wow bounceIn">Уникальность франшизы</h2>
+    <div class="d-flex wow bounceInLeft">
+      <div>
+        <img src="img/img1Main.png" alt="">
+        <p>Родители не экономят на образовании своих детей, особенно
+если речь идет об индивидуальном подходе к воспитанию.
+Именно поэтому ежегодно в центр приходят новые ученики.</p>
+      </div>
+      <div>
+        <img src="img/oVyoaj-P8-E.png" alt="">
+        <p>Мы используем методики интерактивного обучения и современные техники на всех курсах, по каждому
+направлению, проводим открытые мастер-классы и обучаем в мини-группах. Инновационный подход приветствуется
+родителями и отличает нас от аналогов.</p>
+      </div>
+      <div>
+        <img src="img/YcnCbxQ5610.png" alt="">
+        <p>В рамках общей программы "Юниум" проходит обучение по трем блокам: классические предметы, развивающие
+факультеты и творческие. Каждый центр — универсальная
+площадка для развития школьников от 1-11-го классов.</p>
+      </div>
+    </div>
+    <div class="d-flex wow bounceInRight">
+      <div>
+        <img src="img/9ZsTjR7gn_I.png" alt="">
+        <p>Строим бизнес на удержании клиентов, каждый из которых
+сотрудничает с нами длительное время. Основа успеха "Юниум" — высокий LTV, и мы ежегодно повышаем этот
+показатель.</p>
+      </div>
+      <div>
+        <img src="img/4ZBzseJjJcY.png" alt="">
+        <p>83% родителей, обратившихся в центр, советуют нас знакомым
+семьям. Кроме известности бренда в Интернете, на вас
+работает "сарафанное радио" - рекомендации создают
+ощутимый поток клиентов.</p>
+      </div>
+      <div>
+        <img src="img/IMG_3332.png" alt="">
+        <p>С 1991 года нам доверили дополнительное образование своих
+детей 500 тыс. родителей. Компания — генеральный партнер
+фестиваля науки WOW! HOW?, Всероссийской олимпиады "Я
+готов", "Тотальный диктант" и др.</p>
+      </div>
+    </div>
+  </section>
+  <section id="request">
+    <h2 class="wow bounceIn">Требования к франчайзи</h2>
+    <div class="d-flex wow bounceInUp width-fixed">
+      <div>
+        <img src="img/coins.png" alt="">
+        <p><span>Бюджет для старта — 1-2 млн руб.</span></p>
+        <p>В регулярные инвестиции входит роялти — 7% от оборота — и паушальный взнос — 600 тыс. руб./5 лет</p>
+      </div>
+      <div>
+        <img src="img/cityscape.png" alt="">
+        <p><span>Население города от 150 тыс. человек</span></p>
+        <p>Города с населением менее 150 тысяч обсуждаются в индивидуальном порядке</p>
+      </div>
+      <div>
+        <img src="img/plan.png" alt="">
+        <p><span>Помещение площадью 130-150 кв. м</span></p>
+        <p>4-5 кабинетов площадью 12-15 кв. м каждый, с зоной ресепшн, учительской и санузлом</p>
+      </div>
+      <div>
+        <img src="img/Layer 91.png" alt="">
+        <p><span>Понимание ценностей "Юниум"</span></p>
+        <p>Приветствуется опыт ведения бизнеса и управления, педагогическое образование</p>
+      </div>
+    </div>
+    <div class="persentRequest d-flex wow bounceInDown">
+      <div class="emptyRequest"></div>
+      <div>
+        <p><span>Всего 10% желающих становятся нашими партнерами</span></p>
+        <p>Заполните короткую анкету и узнайте о возможности сотрудничества.</p>
+        <button onclick="document.getElementsByClassName('maskAnketFranshiza')[0].style.display='block';">Заполнить анкету франчайзи</button>
+      </div>
+    </div>
+  </section>
+  <section id="partnerProgram">
+    <img class="elips6 wow bounceIn" src="img/Ellipse 6.png" alt="">
+    <img class="elips10 wow bounceIn" src="img/Ellipse 10.png" alt="">
+    <img class="elips41 wow bounceIn" src="img/Ellipse 41.png" alt="">
+    <h2 class="wow bounceIn">Партнерство с "Юниум" — это удобно</h2>
+    <p>Вы получите набор инструментов для развития на старте, поддержку на каждом<br> этапе ведения бизнеса, а также обратную связь от личного методиста!</p>
+    <div class="d-flex wow bounceInLeft">
+      <div>
+        <p><span>Методические материалы</span></p>
+        <ul>
+          <li>
+            <p>Образовательные программы</p>
+          </li>
+          <li>
+            <p>Полная методическая поддержка</p>
+          </li>
+          <li>
+            <p>Соственные учебные пособия</p>
+          </li>
+          <li>
+            <p>Подробные поурочные планы</p>
+          </li>
+          <li>
+            <p>Обучение франчайзи и руководителей в Москве</p>
+          </li>
+          <li>
+            <p>Онлайн-обучение сотрудников</p>
+          </li>
+          <li>
+            <p>Набор образовательных программ</p>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-hide" style="height:600px; background:#9786bd; position:relative;">
+        <img class="laptop wow bounceInTop" src="img/mac_crm.png" alt="">
+      </div>
+      <div>
+        <p><span>IT-решения</span></p>
+        <ul>
+          <li>
+            <p>Корпоративный сайт с личным кабинетом</p>
+          </li>
+          <li>
+            <p>Корпоративная информационная система</p>
+          </li>
+          <li>
+            <p>Система управления обучением</p>
+          </li>
+          <li>
+            <p>Система для работы с соискателями</p>
+          </li>
+          <li>
+            <p>Программа составления расписания</p>
+          </li>
+          <li>
+            <p>CRM — система автоматизации работы с клиентами</p>
+          </li>
+          <li>
+            <p>Инструменты для планирования ресурсов предприятия</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-flex wow bounceInRight">
+      <div>
+        <img src="img/cCa4ysRzaxY.png" alt="">
+      </div>
+      <div>
+        <p><span>Реклама</span></p>
+        <ul>
+          <li>
+            <p>Брендбук — руководство по использованию фирменного стиля и логотипа</p>
+          </li>
+          <li>
+            <p>Полный комплект макетов: постеров, вывесок, листовок, каталогов, акций</p>
+          </li>
+          <li>
+            <p>Инструкции и материалы для проведения массового набора клиентов</p>
+          </li>
+          <li>
+            <p>Регламенты по проведению акций</p>
+          </li>
+          <li>
+            <p>Макеты и описание комплекса мероприятий, связанных с открытием ОЦ</p>
+          </li>
+          <li>
+            <p>Материалы по источникам размещения рекламы, стоимости и механике привлечения клиентов</p>
+          </li>
+          <li>
+            <p>Скрипты телефонных продаж для менеджеров</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <img src="img/32grEiWb1H0.png" alt="">
+      </div>
+    </div>
+    <div class="d-flex wow bounceIn">
+      <div>
+        <p><span>Работа с персоналом</span></p>
+        <ul>
+          <li>
+            <p>Корпоративные инструменты по подбору и поиску персонала</p>
+          </li>
+          <li>
+            <p>Выработанная система мотивации и взаимодействия с персоналом</p>
+          </li>
+          <li>
+            <p>Рекомендации по оценке и тестированию сотрудников, проведению собеседований</p>
+          </li>
+          <li>
+            <p>Набор источников для поиска людей в вашу команду</p>
+          </li>
+          <li>
+            <p>Инструкции по набору персонала, в том числе система оценивания</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <img src="img/logoMain.png" alt="">
+        <p id="text-size" style="text-align:center;"><span>Приобретая франшизу, вы получаете эксклюзивное право на территорию.</span></p>
+        <p style="text-align:center;color:#707070;font-size:16px;">Мы не продаем франшизы в вашем городе на протяжении 12 месяцев, что бы вы могли открыть следующий ОЦ самостоятельно.</p>
+      </div>
+      <div>
+        <p><span>Административная поддержка</span></p>
+        <ul>
+          <li>
+            <p>Календарный план открытия</p>
+          </li>
+          <li>
+            <p>Описание всех бизнес-процессов</p>
+          </li>
+          <li>
+            <p>Корпоративные инструменты по подбору и поиску персонала</p>
+          </li>
+          <li>
+            <p>Выработанная система мотивации и взаимодействия с персоналом</p>
+          </li>
+          <li>
+            <p>Подробная инструкция с требованиями к расположению и правилами поиска помещения под образовательный центр</p>
+          </li>
+          <li>
+            <p>Инструкция по ремонту ОЦ — дизайн-проект элементов помещения с подробным техническим заданием по ремонту помещения и расчетом его стоимости</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-flex wow bounceInDown">
+      <div>
+        <p><span>Юридическая и аналитическая помощь</span></p>
+        <ul>
+          <li>
+            <p>Инструкция и консалтинг по юридическим вопросам</p>
+          </li>
+          <li>
+            <p>Полный пакет трудовых договоров</p>
+          </li>
+          <li>
+            <p>Индивидуальный расчет рентабельности центра</p>
+          </li>
+          <li>
+            <p>Финансовый план франшизы с вариантами развития</p>
+          </li>
+          <li>
+            <p>Первичный анализ рынка и потенциала региона</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <img src="img/IMG_3216.png" alt="">
+      </div>
+      <div>
+        <form action="" id="formPartnerProgram" class="d-flex flex-column wow bounceInTop">
+          <p>Забронируйте франшизу для запуска в этом учебном году</p>
+          <input type="text" placeholder="Имя">
+          <input type="text" placeholder="Город">
+          <input type="tel" style="z-index:99;" placeholder="Телефон">
+          <input type="email" style="z-index:99;" placeholder="E-mail">
+          <button id="formInfoBtn" onclick="document.getElementsByClassName('maskTY')[0].style.display='block'; return false;">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section id="conseption">
+    <h2 class="wow bounceIn">Концепция "Юниум"</h2>
+    <div class="d-flex wow bounceInLeft">
+      <div class="leftConseption">
+        <div class="video-wrapper">
+          <video width="100%" height="100%" poster="img/Rectangle 9.png" src="img/eb.mp4"></video>
+        </div>
+      </div>
+      <div class="rightConseption wow bounceInTop">
+        <p>История <span>"Юниум"</span> начинается с 1991 года — именно тогда мы открыли первый центр при МФТИ.
+Миссия компании актуальна и на сегодня: сделать качественное дополнительное образование
+доступным. В июне 2015 года мы запустили франшизу, и сейчас по нашей программе обучается более <span>18 тыс.</span> учеников по всей России. <br><br>
+ Мы помогаем нашим партнерам вести социальноориентированный бизнес вне конкуренции —
+<span>"Юниум"</span> является монополистом на отечественном рынке образовательных услуг. <br><br>
+ Обратившись к нам, вы <span>экономите время</span> на решение организационных, юридических вопросов, а
+также деньги на продвижение нового бренда. Мы даем франчайзи <span>готовый план развития</span> и
+позволяем каждому сконцентрироваться на ключевой цели — улучшении качества обучения в
+своем городе и заработке на любимом деле.</p>
+      <img src="img/image1.png" style="width:80px;height:80px;border-radius:50%;" class="wow bounceIn" alt="">
+      <p class="black wow bounceInTop">Иван Ершов,</p>
+      <p style="float:right;clear:both; color:#707070;" class="wow bounceInDown">руководитель отдела франчайзинга</p>
+      </div>
+    </div>
+    <div class="btnConseption">
+      <p class="wow bounceInRight">Задайте вопрос о франшизе генеральному директору!</p>
+      <button class="wow bounceInLeft" onclick="document.getElementsByClassName('maskBigQuestion')[0].style.display='block';">Задать вопрос</button>
+    </div>
+  </section>
+  <section id="aboutUs">
+    <h2 class="wow bounceIn">Концепция "Юниум"</h2>
+    <div class="d-flex">
+      <div class="leftAboutUs">
+        <div class="d-flex AboutCount1 wow bounceInLeft justify-content-between">
+          <div><div><span>57</span> центров в <span>23-х</span> городах,<br> из них <span>19</span> — по франшизе</div></div>
+          <div><div>Больше <span>25 тыс.</span> школьников<br> ежегодно выбирают нас</div></div>
+        </div>
+        <div class="d-flex AboutCount2 wow bounceInRight justify-content-between">
+          <div><div><span>17</span> учебных направлений<br> и более <span>100</span> курсов</div></div>
+          <div><div><span>26</span> лет опыта<br> в образовательной сфере</div></div>
+        </div>
+        <div class="d-flex AboutCount3 wow bounceInDown justify-content-between">
+          <div><div>Каждый год мы выпускаем<br> более <span>20 тыс.</span> учеников</div></div>
+          <div><div>В наших центрах обучаются<br> дети из <span>4 500</span> школ</div></div>
+        </div>
+      </div>
+      <div class="rightAboutUs">
+        <div class="slider">
+        <div class="slide_viewer">
+          <div class="slide_group">
+            <a data-fancybox="gallery" href="img/IMG_3294.png">
+              <div class="slide" style="background: url('img/IMG_3294.png'); background-size:cover;">
+                <div class="hiden-hover">
+                  <img src="img/zoom-in.png" alt="">
+                </div>
+              </div>
+            </a>
+            <a data-fancybox="gallery" href="img/IMG_3361.png">
+              <div class="slide" style="background: url('img/IMG_3361.png'); background-size:cover;">
+                <div class="hiden-hover">
+                  <img src="img/zoom-in.png" alt="">
+                </div>
+              </div>
+            </a>
+            <a data-fancybox="gallery" href="img/fWbfv4o57RQ.png">
+              <div class="slide" style="background: url('img/fWbfv4o57RQ.png'); background-size:cover;">
+                <div class="hiden-hover">
+                  <img src="img/zoom-in.png" alt="">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div><!-- End // .slider -->
+
+
+      <div class="directional_nav">
+        <div class="previous_btn" title="Previous">
+
+        </div>
+        <div class="next_btn" title="Next">
+
+        </div>
+      </div><!-- End // .directional_nav -->
+    </div>
+    </div>
+  </section>
+  <section id="results">
+    <h2 class="wow bounceIn">Результаты наших франчайзи</h2>
+    <div class="d-flex">
+      <div class="leftResult">
+        <div class="slider">
+        <div class="slide_viewer">
+          <div class="slide_group">
+            <div class="slide">
+              <img src="img/Layer 16.png" alt="">
+              <p class="black-text">Николай Соловьев,</p>
+              <p>руководитель ОЦ Юниум в г. Краснодар</p>
+              <p>При сильной поддержке отдела франчайзинга на всех стадиях открытие нашего центра прошло
+легко и уверенно. Иван практически в on-line режиме помогал нам с правильной организацией
+открытия. Анна оказывала содействие в отборе преподавателей и проведении для них
+обучающих тренингов. Ребята превратили наш коллектив в настоящую команду с одной целью:
+научить детей чему-то новому, заинтересовать их и привлечь к знаниям!</p>
+            </div>
+            <div class="slide">
+              <img src="img/Layer 16.png" alt="">
+              <p class="black-text">Николай Соловьев,</p>
+              <p>руководитель ОЦ Юниум в г. Краснодар</p>
+              <p>При сильной поддержке отдела франчайзинга на всех стадиях открытие нашего центра прошло
+легко и уверенно. Иван практически в on-line режиме помогал нам с правильной организацией
+открытия. Анна оказывала содействие в отборе преподавателей и проведении для них
+обучающих тренингов. Ребята превратили наш коллектив в настоящую команду с одной целью:
+научить детей чему-то новому, заинтересовать их и привлечь к знаниям!</p>
+            </div>
+          </div>
+        </div>
+      </div><!-- End // .slider -->
+
+
+      <div class="directional_nav">
+        <div class="previous_btn" title="Previous">
+
+        </div>
+        <div class="next_btn" title="Next">
+
+        </div>
+      </div><!-- End // .directional_nav -->
+      </div>
+      <div class="rightResult">
+        <div class="d-flex justify-content-between">
+          <div class="wow bounceInLeft">
+            <p class="black-text">Вложения на старте</p>
+            <p>2 000 000 руб.</p>
+          </div>
+          <div class="wow bounceInRight">
+            <p class="black-text">Сроки окупаемости</p>
+            <p>8 месяцев</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="wow bounceInLeft">
+            <p class="black-text">Оборот</p>
+            <p>760 000 руб.</p>
+          </div>
+          <div class="wow bounceInRight">
+            <p class="black-text">Количество учеников</p>
+            <p>456 учеников</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="mapContainer" class="wow bounceInLeft">
+    <div id="map"></div>
+  </section>
+  <footer id="footer">
+    <img class="elips8 wow bounceInDown" src="img/Ellipse 8.png" alt="">
+    <img class="elips81 wow bounceInRight" src="img/Ellipse 81.png" alt="">
+    <div>
+      <p class="black-text wow bounceTop">8 франшиз уже готовятся к запуску.</p>
+      <p class="wow bounceIn">Осталось 5 свободных мест в этом учебном году!</p>
+      <button onclick="document.getElementsByClassName('maskFranshiza')[0].style.display='block';">Заполнить анкету франчайзи</button>
+      <div>
+        <a href="" class="vk"><img src="img/vk.png" alt=""></a>
+        <a href="" class="fb"><img src="img/facebook.png" alt=""></a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+  <script>
+  var videoPlayButton,
+	videoWrapper = document.getElementsByClassName('video-wrapper')[0],
+    video = document.getElementsByTagName('video')[0],
+    videoMethods = {
+        renderVideoPlayButton: function() {
+            if (videoWrapper.contains(video)) {
+				this.formatVideoPlayButton()
+                video.classList.add('has-media-controls-hidden')
+                videoPlayButton = document.getElementsByClassName('video-overlay-play-button')[0]
+                videoPlayButton.addEventListener('click', this.hideVideoPlayButton)
+            }
+        },
+
+        formatVideoPlayButton: function() {
+            videoWrapper.insertAdjacentHTML('beforeend', '\
+                <svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video">\
+                    <circle cx="100" cy="100" r="90" fill="none" stroke-width="15" stroke="#fff"/>\
+                    <polygon points="70, 55 70, 145 145, 100" fill="#fff"/>\
+                </svg>\
+            ')
+        },
+
+        hideVideoPlayButton: function() {
+            video.play()
+            videoPlayButton.classList.add('is-hidden')
+            video.classList.remove('has-media-controls-hidden')
+            video.setAttribute('controls', 'controls')
+        }
+	}
+
+  videoMethods.renderVideoPlayButton()
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>
+  $('.slider').each(function() {
+  var $this = $(this);
+  var $group = $this.find('.slide_group');
+  var $slides = $this.find('.slide');
+  var bulletArray = [];
+  var currentIndex = 0;
+  var timeout;
+
+  function move(newIndex) {
+    var animateLeft, slideLeft;
+
+    advance();
+
+    if ($group.is(':animated') || currentIndex === newIndex) {
+      return;
+    }
+
+    bulletArray[currentIndex].removeClass('active');
+    bulletArray[newIndex].addClass('active');
+
+    if (newIndex > currentIndex) {
+      slideLeft = '100%';
+      animateLeft = '-100%';
+    } else {
+      slideLeft = '-100%';
+      animateLeft = '100%';
+    }
+
+    $slides.eq(newIndex).css({
+      display: 'block',
+      left: slideLeft
+    });
+    $group.animate({
+      left: animateLeft
+    }, function() {
+      $slides.eq(currentIndex).css({
+        display: 'none'
+      });
+      $slides.eq(newIndex).css({
+        left: 0
+      });
+      $group.css({
+        left: 0
+      });
+      currentIndex = newIndex;
+    });
+  }
+
+  function advance() {
+    clearTimeout(timeout);
+    timeout = setTimeout(function() {
+      if (currentIndex < ($slides.length - 1)) {
+        move(currentIndex + 1);
+      } else {
+        move(0);
+      }
+    }, 4000);
+  }
+
+  $('.next_btn').on('click', function() {
+    if (currentIndex < ($slides.length - 1)) {
+      move(currentIndex + 1);
+    } else {
+      move(0);
+    }
+  });
+
+  $('.previous_btn').on('click', function() {
+    if (currentIndex !== 0) {
+      move(currentIndex - 1);
+    } else {
+      move(3);
+    }
+  });
+
+  $.each($slides, function(index) {
+    var $button = $('<a class="slide_btn">&bull;</a>');
+
+    if (index === currentIndex) {
+      $button.addClass('active');
+    }
+    $button.on('click', function() {
+      move(index);
+    }).appendTo('.slide_buttons');
+    bulletArray.push($button);
+  });
+
+  advance();
+});
+</script>
+<script>
+  $(document).ready(function(){
+    $('.slide').hover(function(){
+      $('.hiden-hover').toggle();
+    })
+  });
+</script>
+
+<script>
+  function MaterialSelect(element) {
+  'use strict';
+
+  this.element_ = element;
+  this.maxRows = this.Constant_.NO_MAX_ROWS;
+  // Initialize instance.
+  this.init();
+  }
+
+  MaterialSelect.prototype.Constant_ = {
+  NO_MAX_ROWS: -1,
+  MAX_ROWS_ATTRIBUTE: 'maxrows'
+  };
+
+  MaterialSelect.prototype.CssClasses_ = {
+  LABEL: 'mdl-textfield__label',
+  INPUT: 'mdl-select__input',
+  IS_DIRTY: 'is-dirty',
+  IS_FOCUSED: 'is-focused',
+  IS_DISABLED: 'is-disabled',
+  IS_INVALID: 'is-invalid',
+  IS_UPGRADED: 'is-upgraded'
+  };
+
+  MaterialSelect.prototype.onKeyDown_ = function(event) {
+  'use strict';
+
+  var currentRowCount = event.target.value.split('\n').length;
+  if (event.keyCode === 13) {
+    if (currentRowCount >= this.maxRows) {
+      event.preventDefault();
+    }
+  }
+  };
+
+  MaterialSelect.prototype.onFocus_ = function(event) {
+  'use strict';
+
+  this.element_.classList.add(this.CssClasses_.IS_FOCUSED);
+  };
+
+  MaterialSelect.prototype.onBlur_ = function(event) {
+  'use strict';
+
+  this.element_.classList.remove(this.CssClasses_.IS_FOCUSED);
+  };
+
+  MaterialSelect.prototype.updateClasses_ = function() {
+  'use strict';
+  this.checkDisabled();
+  this.checkValidity();
+  this.checkDirty();
+  };
+
+  MaterialSelect.prototype.checkDisabled = function() {
+  'use strict';
+  if (this.input_.disabled) {
+    this.element_.classList.add(this.CssClasses_.IS_DISABLED);
+  } else {
+    this.element_.classList.remove(this.CssClasses_.IS_DISABLED);
+  }
+  };
+
+  MaterialSelect.prototype.checkValidity = function() {
+  'use strict';
+  if (this.input_.validity.valid) {
+    this.element_.classList.remove(this.CssClasses_.IS_INVALID);
+  } else {
+    this.element_.classList.add(this.CssClasses_.IS_INVALID);
+  }
+  };
+
+  MaterialSelect.prototype.checkDirty = function() {
+  'use strict';
+  if (this.input_.value && this.input_.value.length > 0) {
+    this.element_.classList.add(this.CssClasses_.IS_DIRTY);
+  } else {
+    this.element_.classList.remove(this.CssClasses_.IS_DIRTY);
+  }
+  };
+
+  MaterialSelect.prototype.disable = function() {
+  'use strict';
+
+  this.input_.disabled = true;
+  this.updateClasses_();
+  };
+
+  MaterialSelect.prototype.enable = function() {
+  'use strict';
+
+  this.input_.disabled = false;
+  this.updateClasses_();
+  };
+
+  MaterialSelect.prototype.change = function(value) {
+  'use strict';
+
+  if (value) {
+    this.input_.value = value;
+  }
+  this.updateClasses_();
+  };
+
+  MaterialSelect.prototype.init = function() {
+  'use strict';
+
+  if (this.element_) {
+    this.label_ = this.element_.querySelector('.' + this.CssClasses_.LABEL);
+    this.input_ = this.element_.querySelector('.' + this.CssClasses_.INPUT);
+
+    if (this.input_) {
+      if (this.input_.hasAttribute(this.Constant_.MAX_ROWS_ATTRIBUTE)) {
+        this.maxRows = parseInt(this.input_.getAttribute(
+            this.Constant_.MAX_ROWS_ATTRIBUTE), 10);
+        if (isNaN(this.maxRows)) {
+          this.maxRows = this.Constant_.NO_MAX_ROWS;
+        }
+      }
+
+      this.boundUpdateClassesHandler = this.updateClasses_.bind(this);
+      this.boundFocusHandler = this.onFocus_.bind(this);
+      this.boundBlurHandler = this.onBlur_.bind(this);
+      this.input_.addEventListener('input', this.boundUpdateClassesHandler);
+      this.input_.addEventListener('focus', this.boundFocusHandler);
+      this.input_.addEventListener('blur', this.boundBlurHandler);
+
+      if (this.maxRows !== this.Constant_.NO_MAX_ROWS) {
+        // TODO: This should handle pasting multi line text.
+        // Currently doesn't.
+        this.boundKeyDownHandler = this.onKeyDown_.bind(this);
+        this.input_.addEventListener('keydown', this.boundKeyDownHandler);
+      }
+
+      this.updateClasses_();
+      this.element_.classList.add(this.CssClasses_.IS_UPGRADED);
+    }
+  }
+  };
+
+  MaterialSelect.prototype.mdlDowngrade_ = function() {
+  'use strict';
+  this.input_.removeEventListener('input', this.boundUpdateClassesHandler);
+  this.input_.removeEventListener('focus', this.boundFocusHandler);
+  this.input_.removeEventListener('blur', this.boundBlurHandler);
+  if (this.boundKeyDownHandler) {
+    this.input_.removeEventListener('keydown', this.boundKeyDownHandler);
+  }
+  };
+
+  // The component registers itself. It can assume componentHandler is available
+  // in the global scope.
+  componentHandler.register({
+  constructor: MaterialSelect,
+  classAsString: 'MaterialSelect',
+  cssClass: 'mdl-js-select',
+  widget: true
+  });
+</script>
+</body>
+</html>
